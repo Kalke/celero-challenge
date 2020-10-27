@@ -1,8 +1,10 @@
 from django.db import models
 
 
+
 class AthleteEvents(models.Model):
-    id = models.BigIntegerField(db_column='ID', primary_key=True)  
+    unique_id = models.BigIntegerField(db_column = 'Unique_ID', primary_key=True, unique=True, editable=False)
+    id = models.BigIntegerField(db_column='ID')
     name = models.TextField(db_column='Name', max_length=100)  
     sex = models.TextField(db_column='Sex')  
     age = models.IntegerField(db_column='Age', blank=True, null=True)  

@@ -5,7 +5,8 @@ class AthleteEventsSerializer(serializers.ModelSerializer):
  
     class Meta:
         model = AthleteEvents
-        fields = ('id',
+        fields = ('unique_id',
+                'id',
                 'name',
                 'sex',
                 'age',

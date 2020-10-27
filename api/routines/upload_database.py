@@ -32,9 +32,8 @@ class UploadDatabase:
             if self.table_exists(item) == False:
                 print(f'Uploading {item}...')
                 self.__engine = create_engine(f'postgresql+psycopg2://{self.__username}:{self.__password}@{self.__host}:{self.__port}/{self.__db}')
-                table.to_sql(name = item, con = self.__engine,
-                                        schema = self.__schema, if_exists = 'replace',
-                                        index = False, chunksize = 10)
+                table.to_sql(index = True, index_label = 'Unique_ID',name = item, con = self.__engine,
+                                        schema = self.__schema, if_exists = 'replace', chunksize = 10)
                 print(f'Table {item} uploaded.')
                 return True
             else:
