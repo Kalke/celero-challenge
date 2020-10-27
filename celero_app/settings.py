@@ -11,10 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'pe3t$p7lsnj*l1d+v+%n1vc_(asfmy_1tujx%5^d6o6t*uh3fa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS=['localhost' ,'127.0.0.1', '[::1]','0.0.0.0','db']
 
 # Application definition
 
@@ -43,7 +42,6 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-
 
 ROOT_URLCONF = 'celero_app.urls'
 
@@ -75,7 +73,7 @@ DATABASES = {
         'NAME': 'celero',
         'USER': 'postgres',
         'PASSWORD': '2009',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT':'5432',
         'SCHEMA':'public'
     }

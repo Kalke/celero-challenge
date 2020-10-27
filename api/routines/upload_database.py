@@ -8,7 +8,7 @@ class UploadDatabase:
 
         self.__username = 'postgres'
         self.__password = '2009'
-        self.__host = 'localhost'
+        self.__host = 'db'
         self.__port = '5432'
         self.__db = 'celero'
         self.__schema = 'public'

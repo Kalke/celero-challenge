@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import psycopg2
 from api.routines.upload_database import UploadDatabase
 
@@ -15,6 +16,8 @@ def main():
 
 
 if __name__ == '__main__':
+    print("Xd")
+    time.sleep(10)
     upload_database = UploadDatabase()
     upload_database.upload_data('./api/resources/')
     main()
