@@ -1,16 +1,15 @@
 # api-celero-challenge
+#### Henrique Kalke Challenge
+#### This is an API built in Python using Django Rest Framework, the objective is create an CRUD to 
+#### manage the Database. Here you can see how to run the application! Hope you enjoy :)
 
 # Process Execution
-## Local
 
-#### Environment
-    conda create -n api-celero-challenge python=3.8
-    source activate api-celero-challenge
-    pip install -r requirements.txt
+## Docker
 
-#### Make migrations 
+#### Running
 
-    python manage.py makemigrations
+
 
 ## Docker 
 

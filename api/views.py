@@ -50,7 +50,7 @@ def athlete_events_itens(request, pk):
             athlete_events.delete() 
             return JsonResponse({'message': 'The specified Athletic Event was deleted successfully.'}, status=status.HTTP_204_NO_CONTENT)
     except AthleteEvents.DoesNotExist: 
-        return JsonResponse({'message': 'The Athlete Event does note exist on the database'}, status=status.HTTP_404_NOT_FOUND)
+        return JsonResponse({'message': "The Athlete Event doesn't exist on the database"}, status=status.HTTP_404_NOT_FOUND)
         
 @api_view(['GET'])
 def athlete_events_existent(request):
