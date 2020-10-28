@@ -18,8 +18,8 @@ def main():
 if __name__ == '__main__':
     print("Waiting...", flush=True)
     # To wait the docker create the database
-    time.sleep(10)
+    time.sleep(5)
     upload_database = UploadDatabase()
     upload_database.upload_data('./api/resources/')
-    print('Listening on 0.0.0.0:8080', flush=True)
+    print('Listening...', flush=True)
     main()

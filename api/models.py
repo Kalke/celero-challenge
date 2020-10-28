@@ -3,7 +3,7 @@ from django.db import models
 
 
 class AthleteEvents(models.Model):
-    unique_id = models.BigIntegerField(db_column = 'Unique_ID', primary_key=True, unique=True, editable=False)
+    unique_id = models.IntegerField(db_column = 'Unique_ID', primary_key=True,unique=True, null=False, blank=False)
     id = models.BigIntegerField(db_column='ID')
     name = models.TextField(db_column='Name', max_length=100)  
     sex = models.TextField(db_column='Sex')  
