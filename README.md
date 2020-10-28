@@ -1,7 +1,7 @@
 # api-celero-challenge
-    Henrique Kalke Challenge
-    This is an API built in Python using Django Rest Framework, the objective is create an CRUD to 
-    manage the Database. Here you can see how to run the application! Hope you enjoy :)
+Henrique Kalke Challenge
+This is an API built in Python using Django Rest Framework, the objective is create an CRUD to 
+manage the Database. Here you can see how to run the application! Hope you enjoy :)
 
 # Process Execution
 
@@ -17,14 +17,13 @@
 
 # REST API
 
-Allowed methods GET, POST, PUT, DELETE
-On the folder notebook you can find cells already configured to do the requests. 
+Allowed methods GET, POST, PUT, DELETE. On the folder notebook you can find cells already configured to do the requests. 
 
-#### Read All
+### Read All
 
 `GET http://0.0.0.0:8000/api/challenge`
 
-### Response
+#### Response
 
     "GET /api/challenge HTTP/1.1" 200 1501
 
@@ -70,12 +69,12 @@ On the folder notebook you can find cells already configured to do the requests.
     .
 ]
 
-#### Create an Athlete Event
+### Create an Athlete Event
     You must pass an unique id
 
 `POST http://0.0.0.0:8000/api/challenge`
 
-### Payload
+#### Payload
 
     { 
     "unique_id":13,
@@ -119,11 +118,11 @@ On the folder notebook you can find cells already configured to do the requests.
     "medal": "Silver"
     }
 
-#### Delete all
+### Delete all
 
 `DELETE http://0.0.0.0:8000/api/challenge`
 
-### Response
+#### Response
 
     "DELETE /api/challenge HTTP/1.1" 204 59
 
@@ -131,11 +130,11 @@ On the folder notebook you can find cells already configured to do the requests.
     "message": "13 Athlete Events were deleted from database!"
     }   
 
-#### Retrieve information using unique id
+### Retrieve information using unique id
 
 `GET http://0.0.0.0:8000/api/challenge/0`
 
-### Response
+#### Response
 
     "GET /api/challenge/2 HTTP/1.1" 200 295
 
@@ -158,11 +157,11 @@ On the folder notebook you can find cells already configured to do the requests.
     "medal": "Silver"
     }
 
-#### Update information using unique id
+### Update information using unique id
 
 `PUT http://0.0.0.0:8000/api/challenge/0`
 
-### Payload
+#### Payload
 
     {
     "unique_id": 0,
@@ -183,7 +182,7 @@ On the folder notebook you can find cells already configured to do the requests.
     "medal": "Silver"
     }
 
-### Response
+#### Response
 
     "PUT /api/challenge/0 HTTP/1.1" 200 307
 
@@ -206,11 +205,11 @@ On the folder notebook you can find cells already configured to do the requests.
     "medal": "Silver"
     }
 
-#### Delete information using unique id
+### Delete information using unique id
 
 `DELETE http://0.0.0.0:8000/api/challenge/0`
 
-### Response
+#### Response
 
     "DELETE /api/challenge/15 HTTP/1.1" 204 69
 
